@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Login</title>
+    <h1><center>Students Log In</center></h1>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Students</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="book.html">Library</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="product.html">Product</a>
+      </li>
+    </ul>
+  </nav>
+  <form>
+    <table class="table">
+      <tr>
+        <td>Name</td>
+          <td><input type="text" class="form-control" id="nam"></td>
+      </tr>
+      <tr>
+        <td>Roll NO</td>
+          <td><input type="text" class="form-control" id="no"></td>
+      </tr>
+      <tr>
+        <td>ADMNO</td>
+          <td><input type="text" class="form-control" id="adm"></td>
+      </tr>
+      <tr>
+        <td>College</td>
+          <td><input type="text" class="form-control" id="colg"></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><button type="button" class="btn btn-info" onclick="display();">Submit</button></td>
+      </tr>
+    </table>
+  </form>
+  <script>
+    function display(){
+      var nam=document.getElementById("nam").value;
+      var num=parseInt(document.getElementById("no").value);
+      var adm=parseInt(document.getElementById("adm").value);
+      var colg=document.getElementById("colg").value;
+      console.log(nam);
+      console.log(num);
+      console.log(adm);
+      console.log(colg);
+    }
+  </script>
+    
+</body>
+</html>

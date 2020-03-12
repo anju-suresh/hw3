@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <h1><center>Book Details</center></h1>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Students</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="book.html">Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-2"></div>
+            <div class="col col-12 col-sm-8">
+                <form>
+                    <table class="table">
+                        <tr>
+                            <td class="font-weight-bloder">Book Name</td>
+                            <td><input type="text" class="form-control" id="bnam"></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bloder">Author</td>
+                            <td><input type="text" class="form-control" id="autor"></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bloder">Distributor</td>
+                            <td><input type="text" class="form-control" id="disbr"></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bloder">Publisher</td>
+                            <td> <input type="text" class="form-control" id="pub"></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bloder">Description</td>
+                            <td><textarea rows="5" cols="100" name="description" class="form-control" id="des"> </textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bloder">Price </td>
+                            <td><input type="text" class="form-control" id="price"></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary">Reset</button></td>
+                            <td><button type="button" class="btn btn-info" onclick="display();">Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col col-sm-2"></div>
+        </div>
+    </div>
+    <script>
+        function display(){
+            var bnam=document.getElementById("bnam").value;
+            var autor=document.getElementById("autor").value;
+            var disbr=document.getElementById("disbr").value;
+            var pub=document.getElementById("pub").value;
+            var des=document.getElementById("des").value;
+            var pric=parseInt(document.getElementById("price").value);
+            console.log(bnam);
+            console.log(autor);
+            console.log(disbr);
+            console.log(pub);
+            console.log(des);
+            console.log(pric);
+
+        }
+    </script>
+</body>
+</html>

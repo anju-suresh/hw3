@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <h1><center>Product Details</center></h1>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Students</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="book.html">Library</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="product.html">Product</a>
+            </li>
+        </ul>
+    </nav>
+    <form>
+        <table class="table">
+            <tr>
+                <td class="font-weight-bolder">
+                    Product
+                </td>
+                <td class="font-weight-bolder"><input type="text" class="form-control" id="prod"></td>
+            </tr>
+            <tr>
+                <td class="font-weight-bolder">manufacturer</td>
+                <td><input type="text" class="form-control" id="manfact"></td>
+            </tr>
+            <tr>
+                <td class="font-weight-bolder">Distributer</td>
+                <td ><input type="text" class="form-control" id="disbr"></td>
+            </tr>
+            <tr>
+                <td class="font-weight-bolder">District</td>
+                <td>
+                    <input list="districts" class="form-control" id="dist">
+                    <datalist id="districts"> 
+                    <option value="Kasaragod"></option>
+                    <option value="Kannur"></option>
+                    <option value="Wayanad"></option>
+                    <option value="Kozhikode"></option>
+                    <option value="Malappuram"></option>
+                    <option value="Palakad"></option>
+                    <option value="Thissur"></option>
+                    <option value="Ernakulam"></option>
+                    <option value="Idukki"></option>
+                    <option value="Kottayam"></option>
+                    <option value="Pathanamthitta"></option>
+                    <option value="Alappuzha"></option>
+                    <option value="Kollam"></option>
+                    <option value="Thiruvananthapuram"></option>
+                </datalist>
+                </td>
+                <tr>
+                    <td class="font-weight-bolder">Price</td>
+                    <td><input type="text" class="form-control" id="price"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-info" onclick="display();">Submit</button> </td>
+                </tr>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function display(){
+            var prod=document.getElementById("prod").value;
+            var manfact=document.getElementById("manfact").value;
+            var disbr=document.getElementById("disbr").value;
+            var dist=document.getElementById("dist").value;
+            var price=parseInt(document.getElementById("price").value);
+            console.log(prod);
+            console.log(manfact);
+            console.log(disbr);
+            console.log(dist);
+            console.log(price);
+        }
+    </script>
+
+</body>
+</html>
